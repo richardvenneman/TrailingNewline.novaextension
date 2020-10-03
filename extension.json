@@ -1,0 +1,37 @@
+{
+  "identifier": "richard.TrailingNewline",
+  "name": "Trailing Newline",
+  "organization": "Richard",
+  "repository": "https://github.com/richardvenneman/TrailingNewline.novaextension",
+  "bugs": "https://github.com/richardvenneman/TrailingNewline.novaextension/issues",
+  "description": "Ensure a single newline at the end of the document.",
+  "version": "1.0",
+  "license": "MIT",
+  "categories": ["formatters"],
+
+  "main": "main.js",
+
+  "activationEvents": ["*"],
+
+  "entitlements": {},
+
+  "commands": {
+    "extensions": [
+      {
+        "title": "Ensure Trailing Newline",
+        "command": "TrailingNewline.format",
+        "shortcut": "option-command-t",
+        "when": "editorHasFocus"
+      }
+    ]
+  },
+
+  "config": [
+    {
+      "key": "TrailingNewline.formatBeforeSave",
+      "title": "Ensure a single trailing newline when saving a document",
+      "type": "boolean",
+      "default": true
+    }
+  ]
+}
