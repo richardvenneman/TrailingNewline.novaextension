@@ -5,7 +5,7 @@
   "repository": "https://github.com/richardvenneman/TrailingNewline.novaextension",
   "bugs": "https://github.com/richardvenneman/TrailingNewline.novaextension/issues",
   "description": "Ensure a single newline at the end of the document.",
-  "version": "1.0",
+  "version": "1.0.1",
   "license": "MIT",
   "categories": ["formatters"],
 
