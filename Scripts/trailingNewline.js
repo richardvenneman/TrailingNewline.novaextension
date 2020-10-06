@@ -5,9 +5,11 @@ async function format(editor) {
     const document = editor.document;
     const range = new Range(0, document.length);
     const text = editor.getTextInRange(range);
-    const formatted = text.replace(RE, '');
+    const formatted = text.replace(RE, '') + '\n';
 
-    textEditorEdit.replace(range, formatted + '\n');
+    if (text !== formatted) {
+      textEditorEdit.replace(range, formatted);
+    }
   });
 }
 
