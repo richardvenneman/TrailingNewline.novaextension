@@ -1,4 +1,4 @@
-const RE = /["\n"]*$/g;
+const RE = /[\n]*$/g;
 
 async function format(editor) {
   editor.edit((textEditorEdit) => {
